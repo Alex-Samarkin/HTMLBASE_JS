@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script>
+        var change_text = function (id, newText) {
+            document.getElementById(id).textContent = newText;
+        }
+    </script>
+
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1 id="id1">Старый Заголовок</h1>
+    <script>
+        var txt = 'Новый заголовок';
+        var res = confirm(txt);
+        if (res) {
+            change_text("id1", txt)
+        }
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
